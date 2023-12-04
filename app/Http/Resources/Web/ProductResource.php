@@ -27,6 +27,7 @@ class ProductResource extends JsonResource
             ),
             'category' => $this->resource->category->name,
             'category_id' => $this->resource->category->id,
+            'created_by' => $this->resource->user->name
         ];
     }
 }
